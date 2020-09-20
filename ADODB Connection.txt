@@ -1,0 +1,15 @@
+set con=CreateObject("ADODB.Connection")
+set rs=CreateObject("ADODB.Recordset")
+
+dbquery="select * from emp where empid="sum""
+con.open "Driver={Microsoft Access Driver (.mdb,.accdb)};dbq=c:\test.mdb;uid=sumit;pwd=;"
+rs.open dbquery,con
+do while rs.EOF==True
+user=rs.fields("name")
+pwd=rs.fields("password")
+rs.movenext
+loop
+con.close
+rs.close
+set con=nothing
+set rs=nothing

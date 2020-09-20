@@ -1,0 +1,1 @@
+CreateObject("Scripting.FileSystemObject").CopyFile "D:\Sumit\Personal\SeleniumTest1.xlsx", "D:\Sumit\Personal\SeleniumTest2.xlsx", true
